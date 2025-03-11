@@ -54,7 +54,7 @@ java개발자 과정 database 리포지토리
     - DCL(Data control Language) - 사용자 권한 부여, 해제, 트랜잭션 시작, 종료
         - GRANT, REVOKE, BEGIN TRANS, COMMIT, ROLLBACK
     - DML(Data manupulation Language) - 데이터 조작언어, 데이터 삽입, 조회, 수정, 삭제
-        - INSERT, SELECT, UPDATE, DELETE
+        - `INSERT`, `SELECT`, `UPDATE`,`DELETE`
 
 - SELECT 기본
     - 데이터 조회 시 사용되는 기본명령어
@@ -76,6 +76,6 @@ java개발자 과정 database 리포지토리
         4. ORDER BY 정렬
         5. 집합
 - 함수(내장함수)
-    - 문자함수
-    
+    - 문자함수 : [SQL]C:\source\java-database-2025\DAY01\sql002_함수.sql
+
 ## 2일차
