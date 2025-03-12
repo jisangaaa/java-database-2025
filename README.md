@@ -79,3 +79,5 @@ java개발자 과정 database 리포지토리
     - 문자함수 : [SQL]C:\source\java-database-2025\DAY01\sql002_함수.sql
 
 ## 2일차
+-함수 계속
+
