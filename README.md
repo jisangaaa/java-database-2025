@@ -79,5 +79,19 @@ java개발자 과정 database 리포지토리
     - 문자함수 : [SQL]C:\source\java-database-2025\DAY01\sql002_함수.sql
 
 ## 2일차
--함수 계속
+- 함수 계속
+    - 문자함수 부터:
+    - 숫자함수
+    - 날짜함수
+    - 형변환함수
+
+- 데이터베이스 타입형
+    - **CHAR(n)** - 고정형 문자열, 최대 2000바이트
+        - **CHAR(20)** 으로 'Hello World' 입력하면 , 'Hello World         ' 로 저장
+    - **VARCHAR(n)** - 가변형 문자열, 최대 4000바이트
+        - 'Hello World'
+        - **VARCHAR(20)** 으로 'Hello World' 입력하면 , 'Hello World' 로 저장
+
+    
+
 
