@@ -26,6 +26,7 @@ SELECT *
   FROM sample_t
  WHERE test3 = 'A678';
 
+-- auto 끄고나면 필히 commit
 	 
 	 
 	 

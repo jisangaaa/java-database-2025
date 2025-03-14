@@ -142,7 +142,10 @@ java개발자 과정 database 리포지토리
     - 은행에서 돈 찾을때 아주 많은 테이블 접근해서 일을 처리
         - 적어도 일곱여덟개 이상 테이블 접근해서 조회하고 업데이트 수행
         - 제대로 일처리안되면 다시 원상복귀
+        - DB 설정 AUTO COMMIT 해제 권장
+        - ROLLBACK 트랜잭션 종료가 아님 COMMIT만 종료
         ```sql
+        SET TRANSACTION READ WRITE; -- 트랜젝션 시작(옵션)
         COMMIT;  --트랜잭션 확정
         ROLLBACK; --원상복귀
         ```
@@ -153,10 +156,17 @@ java개발자 과정 database 리포지토리
          - NOT NULL - 값이 빠지면 안됨
          - UNIQUE - 들어간 데이터가 중복되면 안됨
          - CHECK - 기준에 부합하지 않는 데이터는 입력되면 안됨
-- INDEX 
+         ```sql
+         CREATE TABLE 테이블명 (
+              컬럼 생성시 제약조건 추가
+         );
+
+         ALTER TABLE 테이블명 ADD CONSTRAINT 제약조건
+
+- INDEX :[INDEX쿼리] DAY004 , [인덱스용테이블생성] 벌크004
     - 책의 찾아보기와 동일한 기능
     - 검색을 매우 빨리 할 수 있도록 해줌
-    - B(alance) Tree를 사용해서 검색횟수를 반이하로 줄임
+    - B(alance) Tree를 사용해서 검색횟수를 log(n)건 반이하로 줄임
     - 인덱스 종류
         - 클러스터드 (Clustered) 인덱스 (테이블 당 1개)
             - PK에 자동으로 생성되는 인덱스(빠름)
@@ -170,8 +180,15 @@ java개발자 과정 database 리포지토리
         - 인덱스는 한 테이블 당 4개이상 걸면 성능 저하
         - NULL값, 중복값이 많은 컬럼에 인덱스는 성능 저하
         - INSERT, UPDATE, DELETE가 많이 발생하는 테이블에 인덱스를 걸면 성능 저하
+
+        ```sql
+        CREATE INDEX 인덱스명 ON 테이블명(인덱스컬럼명)
+        ```
+
+## 5일차
 - VIEW
 - 서브쿼리
 - 시퀀스
+...
 
 
