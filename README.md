@@ -278,6 +278,28 @@ java개발자 과정 database 리포지토리
         ```
 
 
+## 7일차
+![alt text](image-1.png)
+- 콘솔 오라클연동 : [python](./)
+    - DPI-1047 오류 발생
+    - 'https://www.oracle.com/kr/database/technologies/instant-client/winx64-64-downloads.html'
+    - 11g 다운
+    - 압축해제 Tool에 path 등록
+    - 재부팅!
+
+
+- QTDesigner 화면 구성
+- PyQt Oracle 연동 CRUD 구현
+
+## 7, 8일차
+- Oracle 연동 Python GUI 프로그램 개발
+    
+
+
+
+
+
+
 
 
 
