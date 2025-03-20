@@ -277,7 +277,6 @@ java개발자 과정 database 리포지토리
         
         ```
 
-
 ## 7일차
 ![alt text](image-1.png)
 - 콘솔 오라클연동 : [python](./)
@@ -286,7 +285,10 @@ java개발자 과정 database 리포지토리
     - 11g 다운
     - 압축해제 Tool에 path 등록
     - 재부팅!
-
+    - 콘솔 테스트 결과
+        - "C:\source\java-database-2025\image\KakaoTalk_20250320_105540534.png"
+        ![alt text](image.png)
+        <img src= "../image/KakaoTalk_20250320_105540534.png" width="600">
 
 - QTDesigner 화면 구성
 - PyQt Oracle 연동 CRUD 구현
