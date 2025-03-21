@@ -291,10 +291,34 @@ java개발자 과정 database 리포지토리
         <img src= "../image/KakaoTalk_20250320_105540534.png" width="600">
 
 - QTDesigner 화면 구성
-- PyQt Oracle 연동 CRUD 구현
+    <img src= "../image/db009.png" width="750">
 
-## 7, 8일차
-- Oracle 연동 Python GUI 프로그램 개발
+- PyQt Oracle 연동 CRUD 구현
+    - 조회 SELECT 구현
+    - 삽입 INSERT 구현
+    - 수정, 삭제 구현
+    - 입력값 검증(Validation check) 로직
+    - DML이 종료된 후 다시 데이터 로드 로직 추가
+    - 데이터 삽입 후 라인에디트에 기존 입력값이 남아있는 것 제거
+
+    <img src="../image/db011.png" width="650">
+
+- 개발도중 문제
+    - [x] DB에 저장된 데이터를 테이블위젯에서 더블클릭한뒤 수정않고 추가를 눌러도 새로 데이터 삽입되는 문제
+    - [x] 수정모드에서 추가를 한 뒤 학생번호가 라인에디트 그대로 존재
+
+- 개발완료 화면
+    - 아이콘 변경 및 추가
+    
+    <img src="../image/db012.png" width="650">
+
+## 데이터베이스 모델링
+- 서점 데이터 모델링
+    - 현실세계 데이터를 DB내에 옮기기 위해서 DB설계하는 것
+    - 모델링 중요점
+        1. 객체별로 테이블을 분리할 것
+        2. 한 컬럼에 데이터를 두개씩 넣지 
+
     
 
 
