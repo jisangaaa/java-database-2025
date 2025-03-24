@@ -98,10 +98,23 @@ SELECT department_id
  */
 -- 문제 9. employees, department, locations 테이블 구조파악
 -- oxford에 근무하는 사원 full_name, 업무, 부서명, 도서명을 출력하시오(34행)
+SELECT e.first_name || ' ' || e.last_name AS "full_name"
+     , e.job_id
+     --, e.DEPARTMENT_ID
+     , d.DEPARTMENT_NAME
+     , l.city
+  FROM employees e, departments d, locations l
+ WHERE e.department_id = d.department_id
+   AND d.location_id = l.location_id
+   AND l.city = 'Oxford';
 
-
-
-
+-- 문10. 부서가 없는 직원까지 모두 full_name, 업무, 부서명을 출력하시오.(107행)
+-- LEFT OUTER JOIN
+SELECT e.first_name || ' ' || e.last_name AS "full_name"
+     , e.job_id
+     , d.department_name
+  FROM employees e, departments d
+ WHERE e.department_id = d.department_id(+);
 
 
 /*
@@ -124,6 +137,12 @@ SELECT first_name || ' ' || last_name AS "full_name"
 
 -- 문제12번. 부서와 업무별 급여합계를 구하여서 급여수준 레벨을 지정하고자함
 -- 부서별, 업무별 급여합계 및 각 부서별 총합, 각 부서별, 업무별 직원수를 출력하시오.
+SELECT department_id, job_id
+	 , to_char(sum(salary), '$99,999') AS "sum salary"
+	 , count(*) AS "Employees Cnt"
+  FROM employees
+ GROUP BY ROLLUP (department_id, job_id);
+
 
 COMMIT;
 
