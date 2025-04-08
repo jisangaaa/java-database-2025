@@ -1,8 +1,5 @@
 -- 1번
-SELECT email
-	 , mobile
-	 , names
-	 , addr
+SELECT *
   FROM membertbl;
 
 
@@ -16,7 +13,8 @@ SELECT names AS 도서명
 
 COMMIT;
 
-
+SELECT *
+  FROM bookstbl;
 
 
 
